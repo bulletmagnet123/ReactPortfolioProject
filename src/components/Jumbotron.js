@@ -1,14 +1,14 @@
 import React from 'react'
 import { Jumbotron as Jumbo, Container } from 'react-bootstrap';
 import styled from 'styled-components'
-import banner from '../assets/watch.jpg'
+import banner from '../assets/banner.jpg'
 
 
 const Styles = styled.div`
 .jumbo {
     background: url(${banner}) no-repeat fixed bottom;
     background-size: cover;
-    color: #ccc;
+    color: #FFC0CB;
     height: 200;
     position: relative:
     z-index: -2;
