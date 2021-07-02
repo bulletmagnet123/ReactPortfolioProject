@@ -16,7 +16,7 @@ const Styles = styled.div`
 
 
 .overlay {
-    background-color: #000;
+    background-color: #CBC3E3;
     opacity: 0.6;
     position: absolute;
     top: 0;

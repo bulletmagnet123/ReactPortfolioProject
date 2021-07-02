@@ -11,6 +11,7 @@ import { Layout } from './components/Layout'
 import { NavigationBar } from './components/NavBar'
 import { Jumbotron } from './components/Jumbotron'
 
+
 function App() {
   render(); {
     return (
