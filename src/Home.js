@@ -20,13 +20,13 @@ export const Home = () => (
 
         </Media>
         <Carousel>
-            <Carousel.Item>
-                <img className="d-block w-100 img-thumbnail" src={ffx1} alt="First slide"></img>
+            <Carousel.Item >
+                <img  className="d-block w-100 img-thumbnail" src={ffx1} alt="First slide"></img>
             </Carousel.Item>
-            <Carousel.Item>
-                <img className="d-block w-100 img-thumbnail" src={ffx2} alt="Second slide"></img>
-            </Carousel.Item>
-            <Carousel.Item>
+            <Carousel.Item >
+                <img  style={{'height':"600px"}}className="d-block w-100 img-thumbnail" src={ffx2} alt="Second slide"></img>
+            </Carousel.Item >
+            <Carousel.Item >
                 <img className="d-block w-100 img-thumbnail" src={ffx3} alt="Third slide"></img>
             </Carousel.Item>
         </Carousel>
