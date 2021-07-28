@@ -4,17 +4,16 @@ import Phaser from 'phaser'
 import { IonPhaser } from '@ion-phaser/react'
 import './App.css';
 import { BrowserRouter as Router, Route, Switch, useLocation } from 'react-router-dom'
-import { Home } from './Home'
-import { About } from './About'
-import { Contact } from './Contact'
+import Home from './components/HomeComponent'
+import About from './components/AboutComponent'
+import Contact from './components/ContactComponent'
 import { NoMatch } from './NoMatch'
-
-import { Layout } from './components/Layout'
 import { NavigationBar } from './components/NavBar'
 import { Jumbotron } from './components/Jumbotron'
 import SideNav from './components/SideNav';
 import { TransitionGroup, CSSTransition } from 'react-transition-group'
 import { gameconfig } from './GameConfig'
+import GameComponent from './components/GameComponent.js'
 
 class App extends Component {
   
@@ -22,19 +21,16 @@ class App extends Component {
     return (
       <React.Fragment>
         <NavigationBar />
-        <SideNav />
         <Jumbotron />
-        <Layout>
           <Router>
                 <Switch>
                   <Route exact path="/" component={Home} />
-                  <Route path="/about" component={About} />
-                  <Route path="/contact" component={Contact} />
+                  <Route path="/About" component={About} />
+                  <Route path="/Contact" component={Contact} />
+                  <Route path="/GameComponent" component={GameComponent} />
                   <Route component={NoMatch} />
                 </Switch>
-              <IonPhaser game={gameconfig} />
           </Router>
-        </Layout>
       </React.Fragment>
     )
   }

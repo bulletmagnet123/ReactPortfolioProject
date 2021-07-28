@@ -27,6 +27,8 @@ export const NavigationBar = () => (
                     <Nav.Item><Nav.Link href="/">Home</Nav.Link></Nav.Item>
                     <Nav.Item><Nav.Link href="/About">About</Nav.Link></Nav.Item>
                     <Nav.Item><Nav.Link href="/Contact">ContactMe</Nav.Link></Nav.Item>
+                    <Nav.Item><Nav.Link href="/GameComponent">Game</Nav.Link></Nav.Item>
+
                 </Nav>
             </Navbar.Collapse>
         </Navbar>

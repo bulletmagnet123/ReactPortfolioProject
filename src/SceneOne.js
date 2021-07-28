@@ -1,4 +1,5 @@
 import Phaser from "phaser";
+import { Weapon, WeaponPlugin } from 'phaser3-weapon-plugin'
 
 export class SceneOne extends Phaser.Scene {
     constructor() {
@@ -20,6 +21,15 @@ export class SceneOne extends Phaser.Scene {
     }
 
     create() {
+        this.plugins.installScenePlugin(
+            'WeaponPlugin',
+            WeaponPlugin,
+            'weapons',
+            this
+        );
+        var bullet = this.add.image('bullet')
+
+        const Mbullet = this.add.sprite(0, 0, 'bullet')
         const speed = 200;
         const speedDiag = speed * (1 / 1.44);
         console.log("SCENE ONE ACTIVATED");
@@ -50,14 +60,12 @@ export class SceneOne extends Phaser.Scene {
         this.player.play('idle');
 
         this.physics.add.collider(this.player, this.platforms);
+
         this.cursors = this.input.keyboard.createCursorKeys();
 
         this.cameras.main.startFollow(this.player);
 
-        // this.bullets = new Bullets(this);
-        // this.input.keyboard.on('keydown-SPACE', (pointer) => {
-        //     this.bullets.fireBullet(player.x, player.y);
-        // });
+        
     }
 
     update() {
