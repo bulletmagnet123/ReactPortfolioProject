@@ -1,0 +1,10 @@
+.Carousel-Item{
+    width: 100%; /*width you want*/
+    height: 500px; /*height you want*/
+    overflow: hidden;
+}
+.Carousel-Item img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
