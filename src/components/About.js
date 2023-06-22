@@ -1,7 +1,7 @@
 import React from 'react'
 import { Component } from 'react';
-import { FadeTransform, Fade, Stagger } from 'react-animation-components';
-import { Breadcrumb, BreadcrumbItem, Card, CardBody, CardHeader, Media } from 'react-bootstrap';
+import { Fade } from 'react-animation-components';
+import { Card } from 'react-bootstrap';
 
 class About extends Component {
     render() {
@@ -133,4 +133,4 @@ class About extends Component {
     }
 }
 
-export { About };
+export default { About };
