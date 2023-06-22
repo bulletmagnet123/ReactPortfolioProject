@@ -10,6 +10,7 @@ import { NavigationBar } from './components/NavBar'
 import { Jumbotron } from './components/Jumbotron'
 import GameComponent from './components/GameComponent.js'
 import SideNav from './components/SideNav';
+import { Navbar } from 'react-bootstrap';
 
 class App extends Component {
 
@@ -24,7 +25,9 @@ class App extends Component {
             <Route path="/About" component={About} />
             <Route path="/Contact" component={Contact} />
             <Route path="/GameComponent" component={GameComponent} />
-            <Route path="/" component={SideNav} />
+            <Route path="/SideNav" component={SideNav} />
+            <Route path="/NavBar" component={Navbar} />
+
             <Route component={NoMatch} />
           </Switch>
         </Router>
